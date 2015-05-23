@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/tyan/.emacs.d/elpa'
+let g:netrw_dirhist_2='/home/tyan/.emacs.d/elpa/fullframe-20140619.305'
+let g:netrw_dirhist_3='/home/tyan/.emacs.d'
+let g:netrw_dirhist_4='/home/tyan/.emacs.d/snippets/js2-mode'
+let g:netrw_dirhist_5='/home/tyan/GITHUB/Aero-Map/APP/platforms/android/platform_www'
+let g:netrw_dirhist_6='/home/tyan/USR/node-v0.12.1-linux-x64/lib/node_modules/ripple-emulator'
+let g:netrw_dirhist_7='/etc/nginx/conf.d'
+let g:netrw_dirhist_8='/home/tyan/.emacs.d/site-lisp/tern'
+let g:netrw_dirhist_9='/home/tyan/.vim/bundle/L9'
