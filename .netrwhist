@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/etc/init'
+let g:netrw_dirhist_2='/home/linaro/USBSPACE/HappyBird-ChatRoom/www/node_modules/gulp-sass/node_modules'
+let g:netrw_dirhist_3='/home/linaro/USBSPACE/HappyBird-ChatRoom/www/node_modules/gulp-sass/node_modules/map-stream'
+let g:netrw_dirhist_4='/home/linaro/html5-boilerplate/src'
+let g:netrw_dirhist_5='/home/linaro/.oh-my-fish/plugins/emacs'
