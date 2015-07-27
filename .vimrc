@@ -59,6 +59,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'bling/vim-airline'
 Plugin 'edkolev/promptline.vim'
 Plugin 'scrooloose/syntastic'
+Plugin 'wookiehangover/jshint.vim'
 
 " Snippets
 Plugin 'SirVer/ultisnips'
@@ -162,7 +163,6 @@ map <Leader>j <Plug>(easymotion-j)
 "!!!!!You can use <C-o> to execute one normal mode command from insert mode. Once this command has been executed, you will be returned to insert mode:
 
 nnoremap <C-t>     :tabnew<CR>
-nnoremap <C-w>     :tabc<CR>
 inoremap <C-t>     <Esc>:tabnew<CR>
 
 " //---------NESTree
@@ -224,3 +224,7 @@ let g:javascript_conceal_super      = "Ω"
 let g:tagbar_type_javascript = {
     \ 'ctagsbin' : '/usr/local/bin/jsctags'
 \ }
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
