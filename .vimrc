@@ -49,12 +49,16 @@ Plugin 'majutsushi/tagbar'
 Plugin 'L9'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'scrooloose/nerdtree'
+Plugin 'marijnh/tern_for_vim'
 
 " misc
 Plugin 'plasticboy/vim-markdown'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'mhinz/vim-startify'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'bling/vim-airline'
+Plugin 'edkolev/promptline.vim'
+Plugin 'scrooloose/syntastic'
 
 " Snippets
 Plugin 'SirVer/ultisnips'
@@ -157,6 +161,9 @@ map <Leader>j <Plug>(easymotion-j)
 
 "!!!!!You can use <C-o> to execute one normal mode command from insert mode. Once this command has been executed, you will be returned to insert mode:
 
+nnoremap <C-t>     :tabnew<CR>
+nnoremap <C-w>     :tabc<CR>
+inoremap <C-t>     <Esc>:tabnew<CR>
 
 " //---------NESTree
 map <F7> :NERDTree<CR>
@@ -213,3 +220,7 @@ let g:javascript_conceal_NaN        = "ℕ"
 let g:javascript_conceal_prototype  = "¶"
 let g:javascript_conceal_static     = "•"
 let g:javascript_conceal_super      = "Ω"
+
+let g:tagbar_type_javascript = {
+    \ 'ctagsbin' : '/usr/local/bin/jsctags'
+\ }
