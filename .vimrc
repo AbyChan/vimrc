@@ -262,6 +262,7 @@ let g:tagbar_type_javascript = {
 \ }
 
 let g:UltiSnipsExpandTrigger="<tab>"
+<<<<<<< HEAD
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsListSnippets="<c-e>"
 
