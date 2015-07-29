@@ -50,8 +50,10 @@ Plugin 'L9'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'scrooloose/nerdtree'
 Plugin 'marijnh/tern_for_vim'
+Plugin 'xolox/vim-easytags'
 
 " misc
+Plugin 'xolox/vim-misc'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'mhinz/vim-startify'
@@ -59,6 +61,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'bling/vim-airline'
 Plugin 'edkolev/promptline.vim'
 Plugin 'scrooloose/syntastic'
+Plugin 'terryma/vim-expand-region'
+Plugin 'tpope/vim-surround'
 
 " Snippets
 Plugin 'SirVer/ultisnips'
@@ -88,6 +92,47 @@ set laststatus=2
 set expandtab                   " use spaces, not tabs (optional)
 set backspace=indent,eol,start  " backspace through everything in insert mode
 set autoindent 
+set modelines=0
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set smarttab      " insert tabs on the start of a line according to shiftwidth, not tabstop
+set expandtab
+set encoding=utf-8
+set scrolloff=3
+set autoindent    " always set autoindenting on
+set copyindent    " copy the previous indentation on autoindenting
+set showmode
+set showcmd
+set hidden
+set wildmenu
+set wildmode=list:longest,full
+set completeopt=menu,menuone,longest
+set cursorline
+set ttyfast
+set ruler
+set backspace=indent,eol,start
+set laststatus=2
+set relativenumber
+set undofile
+set history=1000         " remember more commands and search history
+set undolevels=1000      " use many muchos levels of undo
+
+"move
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+nnoremap j gj
+nnoremap k gk
+nnoremap ; :
+
+
+
 let NERDTreeDirArrows=0 "fix can't open folder
 
 " -----------------uncomment this can fold code default
@@ -101,7 +146,6 @@ hi Normal ctermfg=252 ctermbg=None
 " -----quick escape
 imap jj <Esc>
 "   %) end of width specification
-set statusline=%<\ %n:%f\ %m%r%y%=%-35.(line:\ %l\ of\ %L,\ col:\ %c%V\ (%P)%)
 
 "" Searching
 set hlsearch                    " highlight matches
@@ -162,7 +206,6 @@ map <Leader>j <Plug>(easymotion-j)
 "!!!!!You can use <C-o> to execute one normal mode command from insert mode. Once this command has been executed, you will be returned to insert mode:
 
 nnoremap <C-t>     :tabnew<CR>
-nnoremap <C-w>     :tabc<CR>
 inoremap <C-t>     <Esc>:tabnew<CR>
 
 " //---------NESTree
@@ -188,7 +231,7 @@ let g:startify_custom_header =
 " insert mode quick move
 inoremap II <Esc>I
 inoremap AA <Esc>A
-inoremap OO <Esc>O
+inoremap OO <Esc>o
 
 "II go to just before the first non-blank text of the line
 "AA go to the end of the line
@@ -198,6 +241,9 @@ inoremap CC <Esc>C
 inoremap SS <Esc>S
 inoremap DD <Esc>dd
 inoremap UU <Esc>u
+
+inoremap <C-e> <Esc>$a
+inoremap LL <Esc>lli
 
 "CC change what is on the right of the cursor
 "SS change the whole line
@@ -211,16 +257,27 @@ let g:multi_cursor_prev_key='<C-p>'
 let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<Esc>'
 
-let g:javascript_conceal_function   = "ƒ"
-let g:javascript_conceal_null       = "ø"
-let g:javascript_conceal_this       = "@"
-let g:javascript_conceal_return     = "⇚"
-let g:javascript_conceal_undefined  = "¿"
-let g:javascript_conceal_NaN        = "ℕ"
-let g:javascript_conceal_prototype  = "¶"
-let g:javascript_conceal_static     = "•"
-let g:javascript_conceal_super      = "Ω"
-
 let g:tagbar_type_javascript = {
     \ 'ctagsbin' : '/usr/local/bin/jsctags'
 \ }
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsListSnippets="<c-e>"
+
+
+"syntastic
+let g:syntastic_error_symbol='✗'
+let g:syntastic_warning_symbol='⚠'
+let g:syntastic_enable_highlighting=0
+let g:syntastic_auto_loc_list=1
+
+" EasyTags
+set tags=./tags;
+set tags=./tags;
+let g:easytags_always_enabled = 1
+let g:easytags_file = './tags'
+let g:easytags_dynamic_files = 1
+let g:easytags_auto_highlight = 1
+let g:easytags_updatetime_min = 5000
+
