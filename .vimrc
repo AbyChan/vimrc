@@ -63,6 +63,8 @@ Plugin 'edkolev/promptline.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-expand-region'
 Plugin 'tpope/vim-surround'
+Plugin 'DataWraith/auto_mkdir'
+Plugin 'edsono/vim-matchit' "extended % matching for HTML
 
 " Snippets
 Plugin 'SirVer/ultisnips'
