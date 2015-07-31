@@ -36,6 +36,7 @@ Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'moll/vim-node'
 Plugin 'pangloss/vim-javascript'
+Plugin 'marijnh/tern_for_vim'
 
 " //i'don't like tabular ,because i think it is unnesccary with hightlight
 " Plugin 'godlygeek/tabular'
@@ -49,8 +50,8 @@ Plugin 'majutsushi/tagbar'
 Plugin 'L9'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'scrooloose/nerdtree'
-Plugin 'marijnh/tern_for_vim'
 Plugin 'xolox/vim-easytags'
+Plugin 'scrooloose/nerdcommenter'
 
 " misc
 Plugin 'xolox/vim-misc'
@@ -68,7 +69,6 @@ Plugin 'edsono/vim-matchit' "extended % matching for HTML
 
 " Snippets
 Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
 
 " color
 Plugin 'altercation/vim-colors-solarized'
@@ -161,19 +161,19 @@ set smartcase                   " ... unless they contain at least one capital l
 " let jshint2_read = 1
 " let jshint2_save = 1
 
-nnoremap <silent><F1> :JSHint<CR>
-inoremap <silent><F1> <C-O>:JSHint<CR>
-vnoremap <silent><F1> :JSHint<CR>
+"nnoremap <silent><F1> :JSHint<CR>
+"inoremap <silent><F1> <C-O>:JSHint<CR>
+"vnoremap <silent><F1> :JSHint<CR>
 
-" show next jshint error
-nnoremap <silent><F2> :lnext<CR>
-inoremap <silent><F2> <C-O>:lnext<CR>
-vnoremap <silent><F2> :lnext<CR>
+"" show next jshint error
+"nnoremap <silent><F2> :lnext<CR>
+"inoremap <silent><F2> <C-O>:lnext<CR>
+"vnoremap <silent><F2> :lnext<CR>
 
-" show previous jshint error
-nnoremap <silent><F3> :lprevious<CR>
-inoremap <silent><F3> <C-O>:lprevious<CR>
-vnoremap <silent><F3> :lprevious<CR>
+"" show previous jshint error
+"nnoremap <silent><F3> :lprevious<CR>
+"inoremap <silent><F3> <C-O>:lprevious<CR>
+"vnoremap <silent><F3> :lprevious<CR>
 
 " ------tool
 
@@ -284,3 +284,8 @@ let g:snips_trigger_key = '<C-\>'
 
 let g:ycm_key_list_select_completion = ['<c-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<c-p>', '<Up>']
+
+
+nmap <F2> :TernDef<CR>
+nmap <F3> :TernRename<CR>
+nmap <F4> :TernDefPreview<CR>
