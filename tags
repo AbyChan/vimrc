@@ -1,27 +1,45 @@
 !_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
 ;	/home/aby/.vim/.vimrc	/^nnoremap ; :$/;"	m	language:Vim
+;	/Users/tyan/.vim/.vimrc	/^nnoremap ; :$/;"	m	language:Vim
 <C-a>	/home/aby/.vim/.vimrc	/^nmap <C-a> <Plug>(easymotion-s)$/;"	m	language:Vim
+<C-a>	/Users/tyan/.vim/.vimrc	/^nmap <C-a> <Plug>(easymotion-s)$/;"	m	language:Vim
+<C-Down>	/Users/tyan/.vim/.vimrc	/^nmap <C-Down> <Plug>(macvim-transparency-dec)$/;"	m	language:Vim
 <C-e>	/home/aby/.vim/.vimrc	/^inoremap <C-e> <Esc>$a$/;"	m	language:Vim
+<C-e>	/Users/tyan/.vim/.vimrc	/^inoremap <C-e> <Esc>$a$/;"	m	language:Vim
 <C-S-c>	/home/aby/.vim/.vimrc	/^  vmap <C-S-c> "+y$/;"	m	language:Vim
+<C-S-c>	/Users/tyan/.vim/.vimrc	/^  vmap <C-S-c> "+y$/;"	m	language:Vim
 <C-S-v>	/home/aby/.vim/.vimrc	/^  imap <C-S-v> <Esc>"+gP$/;"	m	language:Vim
+<C-S-v>	/Users/tyan/.vim/.vimrc	/^  imap <C-S-v> <Esc>"+gP$/;"	m	language:Vim
 <C-S-x>	/home/aby/.vim/.vimrc	/^  vmap <C-S-x> "+x$/;"	m	language:Vim
+<C-S-x>	/Users/tyan/.vim/.vimrc	/^  vmap <C-S-x> "+x$/;"	m	language:Vim
 <C-t>	/home/aby/.vim/.vimrc	/^inoremap <C-t>     <Esc>:tabnew<CR>$/;"	m	language:Vim
 <C-t>	/home/aby/.vim/.vimrc	/^nnoremap <C-t>     :tabnew<CR>$/;"	m	language:Vim
+<C-t>	/Users/tyan/.vim/.vimrc	/^inoremap <C-t>     <Esc>:tabnew<CR>$/;"	m	language:Vim
+<C-t>	/Users/tyan/.vim/.vimrc	/^nnoremap <C-t>     :tabnew<CR>$/;"	m	language:Vim
+<C-Up>	/Users/tyan/.vim/.vimrc	/^nmap <C-Up>   <Plug>(macvim-transparency-inc)$/;"	m	language:Vim
 <C-z>	/home/aby/.vim/.vimrc	/^nmap <C-z> <Plug>(easymotion-s)$/;"	m	language:Vim
+<C-z>	/Users/tyan/.vim/.vimrc	/^nmap <C-z> <Plug>(easymotion-s)$/;"	m	language:Vim
 <down>	/home/aby/.vim/.vimrc	/^inoremap <down> <nop>$/;"	m	language:Vim
 <down>	/home/aby/.vim/.vimrc	/^nnoremap <down> <nop>$/;"	m	language:Vim
+<F10>	/Users/tyan/.vim/.vimrc	/^nmap <F10>    <Plug>(macvim-transparency-roll)$/;"	m	language:Vim
 <F1>	/home/aby/.vim/.vimrc	/^inoremap <silent><F1> <C-O>:JSHint<CR>$/;"	m	language:Vim
 <F1>	/home/aby/.vim/.vimrc	/^nnoremap <silent><F1> :JSHint<CR>$/;"	m	language:Vim
 <F1>	/home/aby/.vim/.vimrc	/^vnoremap <silent><F1> :JSHint<CR>$/;"	m	language:Vim
 <F2>	/home/aby/.vim/.vimrc	/^inoremap <silent><F2> <C-O>:lnext<CR>$/;"	m	language:Vim
 <F2>	/home/aby/.vim/.vimrc	/^nnoremap <silent><F2> :lnext<CR>$/;"	m	language:Vim
 <F2>	/home/aby/.vim/.vimrc	/^vnoremap <silent><F2> :lnext<CR>$/;"	m	language:Vim
+<F2>	/Users/tyan/.vim/.vimrc	/^nmap <F2> :TernDef<CR>$/;"	m	language:Vim
 <F3>	/home/aby/.vim/.vimrc	/^inoremap <silent><F3> <C-O>:lprevious<CR>$/;"	m	language:Vim
 <F3>	/home/aby/.vim/.vimrc	/^nnoremap <silent><F3> :lprevious<CR>$/;"	m	language:Vim
 <F3>	/home/aby/.vim/.vimrc	/^vnoremap <silent><F3> :lprevious<CR>$/;"	m	language:Vim
+<F3>	/Users/tyan/.vim/.vimrc	/^nmap <F3> :TernRename<CR>$/;"	m	language:Vim
+<F4>	/Users/tyan/.vim/.vimrc	/^nmap <F4> :TernDefPreview<CR>$/;"	m	language:Vim
 <F7>	/home/aby/.vim/.vimrc	/^map <F7> :NERDTree<CR>$/;"	m	language:Vim
+<F7>	/Users/tyan/.vim/.vimrc	/^map <F7> :NERDTree<CR>$/;"	m	language:Vim
 <F8>	/home/aby/.vim/.vimrc	/^nmap <F8> :TagbarToggle<CR>$/;"	m	language:Vim
+<F8>	/Users/tyan/.vim/.vimrc	/^nmap <F8> :TagbarToggle<CR>$/;"	m	language:Vim
 <Leader>j	/home/aby/.vim/.vimrc	/^map <Leader>j <Plug>(easymotion-j)$/;"	m	language:Vim
+<Leader>j	/Users/tyan/.vim/.vimrc	/^map <Leader>j <Plug>(easymotion-j)$/;"	m	language:Vim
 <left>	/home/aby/.vim/.vimrc	/^inoremap <left> <nop>$/;"	m	language:Vim
 <left>	/home/aby/.vim/.vimrc	/^nnoremap <left> <nop>$/;"	m	language:Vim
 <right>	/home/aby/.vim/.vimrc	/^inoremap <right> <nop>$/;"	m	language:Vim
@@ -29,40 +47,79 @@
 <up>	/home/aby/.vim/.vimrc	/^inoremap <up> <nop>$/;"	m	language:Vim
 <up>	/home/aby/.vim/.vimrc	/^nnoremap <up> <nop>$/;"	m	language:Vim
 AA	/home/aby/.vim/.vimrc	/^inoremap AA <Esc>A$/;"	m	language:Vim
+AA	/Users/tyan/.vim/.vimrc	/^inoremap AA <Esc>A$/;"	m	language:Vim
 CC	/home/aby/.vim/.vimrc	/^inoremap CC <Esc>C$/;"	m	language:Vim
+CC	/Users/tyan/.vim/.vimrc	/^inoremap CC <Esc>C$/;"	m	language:Vim
 DD	/home/aby/.vim/.vimrc	/^inoremap DD <Esc>dd$/;"	m	language:Vim
+DD	/Users/tyan/.vim/.vimrc	/^inoremap DD <Esc>dd$/;"	m	language:Vim
 g:AutoPairsFlyMode	/home/aby/.vim/.vimrc	/^let g:AutoPairsFlyMode = 0$/;"	v	language:Vim
+g:AutoPairsFlyMode	/Users/tyan/.vim/.vimrc	/^let g:AutoPairsFlyMode = 0$/;"	v	language:Vim
 g:AutoPairsShortcutBackInsert	/home/aby/.vim/.vimrc	/^let g:AutoPairsShortcutBackInsert = '<M-b>'$/;"	v	language:Vim
+g:AutoPairsShortcutBackInsert	/Users/tyan/.vim/.vimrc	/^let g:AutoPairsShortcutBackInsert = '<M-b>'$/;"	v	language:Vim
 g:AutoPairsShortcutToggle	/home/aby/.vim/.vimrc	/^let g:AutoPairsShortcutToggle = '<M-p>'$/;"	v	language:Vim
+g:AutoPairsShortcutToggle	/Users/tyan/.vim/.vimrc	/^let g:AutoPairsShortcutToggle = '<M-p>'$/;"	v	language:Vim
 g:EasyMotion_do_mapping	/home/aby/.vim/.vimrc	/^let g:EasyMotion_do_mapping = 0 " Disable default mappings$/;"	v	language:Vim
+g:EasyMotion_do_mapping	/Users/tyan/.vim/.vimrc	/^let g:EasyMotion_do_mapping = 0 " Disable default mappings$/;"	v	language:Vim
 g:EasyMotion_smartcase	/home/aby/.vim/.vimrc	/^let g:EasyMotion_smartcase = 1$/;"	v	language:Vim
+g:EasyMotion_smartcase	/Users/tyan/.vim/.vimrc	/^let g:EasyMotion_smartcase = 1$/;"	v	language:Vim
 g:easytags_always_enabled	/home/aby/.vim/.vimrc	/^let g:easytags_always_enabled = 1$/;"	v	language:Vim
+g:easytags_always_enabled	/Users/tyan/.vim/.vimrc	/^let g:easytags_always_enabled = 1$/;"	v	language:Vim
 g:easytags_auto_highlight	/home/aby/.vim/.vimrc	/^let g:easytags_auto_highlight = 1$/;"	v	language:Vim
+g:easytags_auto_highlight	/Users/tyan/.vim/.vimrc	/^let g:easytags_auto_highlight = 1$/;"	v	language:Vim
 g:easytags_dynamic_files	/home/aby/.vim/.vimrc	/^let g:easytags_dynamic_files = 1$/;"	v	language:Vim
+g:easytags_dynamic_files	/Users/tyan/.vim/.vimrc	/^let g:easytags_dynamic_files = 1$/;"	v	language:Vim
 g:easytags_file	/home/aby/.vim/.vimrc	/^let g:easytags_file = '.\/tags'$/;"	v	language:Vim
+g:easytags_file	/Users/tyan/.vim/.vimrc	/^let g:easytags_file = '.\/tags'$/;"	v	language:Vim
 g:easytags_updatetime_min	/home/aby/.vim/.vimrc	/^let g:easytags_updatetime_min = 5000$/;"	v	language:Vim
+g:easytags_updatetime_min	/Users/tyan/.vim/.vimrc	/^let g:easytags_updatetime_min = 5000$/;"	v	language:Vim
+g:macvim_transparency_roller	/Users/tyan/.vim/.vimrc	/^let g:macvim_transparency_roller = [0, 50, 100]$/;"	v	language:Vim
+g:macvim_transparency_step	/Users/tyan/.vim/.vimrc	/^let g:macvim_transparency_step = 10$/;"	v	language:Vim
 g:multi_cursor_next_key	/home/aby/.vim/.vimrc	/^let g:multi_cursor_next_key='<C-n>'$/;"	v	language:Vim
+g:multi_cursor_next_key	/Users/tyan/.vim/.vimrc	/^let g:multi_cursor_next_key='<C-n>'$/;"	v	language:Vim
 g:multi_cursor_prev_key	/home/aby/.vim/.vimrc	/^let g:multi_cursor_prev_key='<C-p>'$/;"	v	language:Vim
+g:multi_cursor_prev_key	/Users/tyan/.vim/.vimrc	/^let g:multi_cursor_prev_key='<C-p>'$/;"	v	language:Vim
 g:multi_cursor_quit_key	/home/aby/.vim/.vimrc	/^let g:multi_cursor_quit_key='<Esc>'$/;"	v	language:Vim
+g:multi_cursor_quit_key	/Users/tyan/.vim/.vimrc	/^let g:multi_cursor_quit_key='<Esc>'$/;"	v	language:Vim
 g:multi_cursor_skip_key	/home/aby/.vim/.vimrc	/^let g:multi_cursor_skip_key='<C-x>'$/;"	v	language:Vim
+g:multi_cursor_skip_key	/Users/tyan/.vim/.vimrc	/^let g:multi_cursor_skip_key='<C-x>'$/;"	v	language:Vim
 g:multi_cursor_use_default_mapping	/home/aby/.vim/.vimrc	/^let g:multi_cursor_use_default_mapping=0$/;"	v	language:Vim
+g:multi_cursor_use_default_mapping	/Users/tyan/.vim/.vimrc	/^let g:multi_cursor_use_default_mapping=0$/;"	v	language:Vim
+g:snips_trigger_key	/Users/tyan/.vim/.vimrc	/^let g:snips_trigger_key = '<C-\\>'$/;"	v	language:Vim
 g:startify_custom_header	/home/aby/.vim/.vimrc	/^let g:startify_custom_header =$/;"	v	language:Vim
+g:startify_custom_header	/Users/tyan/.vim/.vimrc	/^let g:startify_custom_header =$/;"	v	language:Vim
 g:syntastic_auto_loc_list	/home/aby/.vim/.vimrc	/^let g:syntastic_auto_loc_list=1$/;"	v	language:Vim
 g:syntastic_enable_highlighting	/home/aby/.vim/.vimrc	/^let g:syntastic_enable_highlighting=0$/;"	v	language:Vim
 g:syntastic_error_symbol	/home/aby/.vim/.vimrc	/^let g:syntastic_error_symbol='✗'$/;"	v	language:Vim
+g:syntastic_error_symbol	/Users/tyan/.vim/.vimrc	/^let g:syntastic_error_symbol='✗'$/;"	v	language:Vim
+g:syntastic_javascript_checkers	/Users/tyan/.vim/.vimrc	/^let g:syntastic_javascript_checkers = ['jshint']$/;"	v	language:Vim
 g:syntastic_warning_symbol	/home/aby/.vim/.vimrc	/^let g:syntastic_warning_symbol='⚠'$/;"	v	language:Vim
+g:syntastic_warning_symbol	/Users/tyan/.vim/.vimrc	/^let g:syntastic_warning_symbol='⚠'$/;"	v	language:Vim
 g:tagbar_type_javascript	/home/aby/.vim/.vimrc	/^let g:tagbar_type_javascript = {$/;"	v	language:Vim
+g:tagbar_type_javascript	/Users/tyan/.vim/.vimrc	/^let g:tagbar_type_javascript = {$/;"	v	language:Vim
 g:UltiSnipsExpandTrigger	/home/aby/.vim/.vimrc	/^let g:UltiSnipsExpandTrigger="<tab>"$/;"	v	language:Vim
 g:UltiSnipsJumpForwardTrigger	/home/aby/.vim/.vimrc	/^let g:UltiSnipsJumpForwardTrigger="<tab>"$/;"	v	language:Vim
 g:UltiSnipsListSnippets	/home/aby/.vim/.vimrc	/^let g:UltiSnipsListSnippets="<c-e>"$/;"	v	language:Vim
+g:ycm_key_list_previous_completion	/Users/tyan/.vim/.vimrc	/^let g:ycm_key_list_previous_completion = ['<c-p>', '<Up>']$/;"	v	language:Vim
+g:ycm_key_list_select_completion	/Users/tyan/.vim/.vimrc	/^let g:ycm_key_list_select_completion = ['<c-n>', '<Down>']$/;"	v	language:Vim
 II	/home/aby/.vim/.vimrc	/^inoremap II <Esc>I$/;"	m	language:Vim
+II	/Users/tyan/.vim/.vimrc	/^inoremap II <Esc>I$/;"	m	language:Vim
 j	/home/aby/.vim/.vimrc	/^nnoremap j gj$/;"	m	language:Vim
+j	/Users/tyan/.vim/.vimrc	/^nnoremap j gj$/;"	m	language:Vim
 jj	/home/aby/.vim/.vimrc	/^imap jj <Esc>$/;"	m	language:Vim
+jj	/Users/tyan/.vim/.vimrc	/^imap jj <Esc>$/;"	m	language:Vim
 k	/home/aby/.vim/.vimrc	/^nnoremap k gk$/;"	m	language:Vim
+k	/Users/tyan/.vim/.vimrc	/^nnoremap k gk$/;"	m	language:Vim
 LL	/home/aby/.vim/.vimrc	/^inoremap LL <Esc>lli$/;"	m	language:Vim
+LL	/Users/tyan/.vim/.vimrc	/^inoremap LL <Esc>lli$/;"	m	language:Vim
 mapleader	/home/aby/.vim/.vimrc	/^let mapleader=","$/;"	v	language:Vim
+mapleader	/Users/tyan/.vim/.vimrc	/^let mapleader=","$/;"	v	language:Vim
 NERDTreeDirArrows	/home/aby/.vim/.vimrc	/^let NERDTreeDirArrows=0 "fix can't open folder$/;"	v	language:Vim
+NERDTreeDirArrows	/Users/tyan/.vim/.vimrc	/^let NERDTreeDirArrows=0 "fix can't open folder$/;"	v	language:Vim
 OO	/home/aby/.vim/.vimrc	/^inoremap OO <Esc>o$/;"	m	language:Vim
+OO	/Users/tyan/.vim/.vimrc	/^inoremap OO <Esc>o$/;"	m	language:Vim
 s	/home/aby/.vim/.vimrc	/^nmap s <Plug>(easymotion-s)$/;"	m	language:Vim
+s	/Users/tyan/.vim/.vimrc	/^nmap s <Plug>(easymotion-s)$/;"	m	language:Vim
 SS	/home/aby/.vim/.vimrc	/^inoremap SS <Esc>S$/;"	m	language:Vim
+SS	/Users/tyan/.vim/.vimrc	/^inoremap SS <Esc>S$/;"	m	language:Vim
 UU	/home/aby/.vim/.vimrc	/^inoremap UU <Esc>u$/;"	m	language:Vim
+UU	/Users/tyan/.vim/.vimrc	/^inoremap UU <Esc>u$/;"	m	language:Vim

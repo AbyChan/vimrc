@@ -8,7 +8,7 @@ if has("gui_running")
   vmap <C-S-x> "+x
   vmap <C-S-c> "+y
   imap <C-S-v> <Esc>"+gP
-  set guifont=Roboto\ Mono\ Regular\ 11
+  set guifont=Monaco\ Regular\ 18
 endif
 
 set wildmode=longest,list,full
@@ -66,6 +66,7 @@ Plugin 'terryma/vim-expand-region'
 Plugin 'tpope/vim-surround'
 Plugin 'DataWraith/auto_mkdir'
 Plugin 'edsono/vim-matchit' "extended % matching for HTML
+Plugin 't9md/vim-macvim-transparency'
 
 " Snippets
 Plugin 'SirVer/ultisnips'
@@ -120,14 +121,6 @@ set history=1000         " remember more commands and search history
 set undolevels=1000      " use many muchos levels of undo
 
 "move
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 nnoremap ; :
@@ -289,3 +282,14 @@ let g:ycm_key_list_previous_completion = ['<c-p>', '<Up>']
 nmap <F2> :TernDef<CR>
 nmap <F3> :TernRename<CR>
 nmap <F4> :TernDefPreview<CR>
+
+
+let g:macvim_transparency_step = 10
+let g:macvim_transparency_roller = [0, 50, 100]
+
+" transparent
+nmap <C-Up>   <Plug>(macvim-transparency-inc)
+" opaque
+nmap <C-Down> <Plug>(macvim-transparency-dec)
+" roll from 
+nmap <F10>    <Plug>(macvim-transparency-roll)
