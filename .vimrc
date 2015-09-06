@@ -37,6 +37,7 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'moll/vim-node'
 Plugin 'pangloss/vim-javascript'
 Plugin 'marijnh/tern_for_vim'
+Plugin 'kchmck/vim-coffee-script'
 
 " //i'don't like tabular ,because i think it is unnesccary with hightlight
 " Plugin 'godlygeek/tabular'
@@ -67,6 +68,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'DataWraith/auto_mkdir'
 Plugin 'edsono/vim-matchit' "extended % matching for HTML
 Plugin 't9md/vim-macvim-transparency'
+Plugin 'nelstrom/vimprint'
 
 " Snippets
 Plugin 'SirVer/ultisnips'
