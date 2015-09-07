@@ -70,6 +70,7 @@ Plugin 'edsono/vim-matchit' "extended % matching for HTML
 Plugin 't9md/vim-macvim-transparency'
 Plugin 'sjbach/lusty'
 Plugin 'kien/ctrlp.vim'
+Plugin 'nelstrom/vimprint'
 
 " Snippets
 Plugin 'SirVer/ultisnips'
