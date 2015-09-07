@@ -52,6 +52,8 @@ CC	/home/aby/.vim/.vimrc	/^inoremap CC <Esc>C$/;"	m	language:Vim
 CC	/Users/tyan/.vim/.vimrc	/^inoremap CC <Esc>C$/;"	m	language:Vim
 DD	/home/aby/.vim/.vimrc	/^inoremap DD <Esc>dd$/;"	m	language:Vim
 DD	/Users/tyan/.vim/.vimrc	/^inoremap DD <Esc>dd$/;"	m	language:Vim
+EXPLORER_RUBY_FILES	/Users/tyan/.vim/bundle/lusty/Makefile	/^EXPLORER_RUBY_FILES = src\/vim.rb \\$/;"	m	language:Make
+EXPLORER_VIM_FILE	/Users/tyan/.vim/bundle/lusty/Makefile	/^EXPLORER_VIM_FILE = src\/explorer.vim$/;"	m	language:Make
 g:AutoPairsFlyMode	/home/aby/.vim/.vimrc	/^let g:AutoPairsFlyMode = 0$/;"	v	language:Vim
 g:AutoPairsFlyMode	/Users/tyan/.vim/.vimrc	/^let g:AutoPairsFlyMode = 0$/;"	v	language:Vim
 g:AutoPairsShortcutBackInsert	/home/aby/.vim/.vimrc	/^let g:AutoPairsShortcutBackInsert = '<M-b>'$/;"	v	language:Vim
@@ -107,8 +109,12 @@ j	/home/aby/.vim/.vimrc	/^nnoremap j gj$/;"	m	language:Vim
 j	/Users/tyan/.vim/.vimrc	/^nnoremap j gj$/;"	m	language:Vim
 jj	/home/aby/.vim/.vimrc	/^imap jj <Esc>$/;"	m	language:Vim
 jj	/Users/tyan/.vim/.vimrc	/^imap jj <Esc>$/;"	m	language:Vim
+JUGGLER_RUBY_FILES	/Users/tyan/.vim/bundle/lusty/Makefile	/^JUGGLER_RUBY_FILES = src\/vim.rb \\$/;"	m	language:Make
+JUGGLER_VIM_FILE	/Users/tyan/.vim/bundle/lusty/Makefile	/^JUGGLER_VIM_FILE = src\/juggler.vim$/;"	m	language:Make
 k	/home/aby/.vim/.vimrc	/^nnoremap k gk$/;"	m	language:Vim
 k	/Users/tyan/.vim/.vimrc	/^nnoremap k gk$/;"	m	language:Vim
+LEFT_BOUND	/Users/tyan/.vim/bundle/lusty/Makefile	/^LEFT_BOUND = [[:<:]]$/;"	m	language:Make
+LEFT_BOUND	/Users/tyan/.vim/bundle/lusty/Makefile	/^LEFT_BOUND = \\<$/;"	m	language:Make
 LL	/home/aby/.vim/.vimrc	/^inoremap LL <Esc>lli$/;"	m	language:Vim
 LL	/Users/tyan/.vim/.vimrc	/^inoremap LL <Esc>lli$/;"	m	language:Vim
 mapleader	/home/aby/.vim/.vimrc	/^let mapleader=","$/;"	v	language:Vim
@@ -117,9 +123,12 @@ NERDTreeDirArrows	/home/aby/.vim/.vimrc	/^let NERDTreeDirArrows=0 "fix can't ope
 NERDTreeDirArrows	/Users/tyan/.vim/.vimrc	/^let NERDTreeDirArrows=0 "fix can't open folder$/;"	v	language:Vim
 OO	/home/aby/.vim/.vimrc	/^inoremap OO <Esc>o$/;"	m	language:Vim
 OO	/Users/tyan/.vim/.vimrc	/^inoremap OO <Esc>o$/;"	m	language:Vim
+RIGHT_BOUND	/Users/tyan/.vim/bundle/lusty/Makefile	/^RIGHT_BOUND = [[:>:]]$/;"	m	language:Make
+RIGHT_BOUND	/Users/tyan/.vim/bundle/lusty/Makefile	/^RIGHT_BOUND = \\>$/;"	m	language:Make
 s	/home/aby/.vim/.vimrc	/^nmap s <Plug>(easymotion-s)$/;"	m	language:Vim
 s	/Users/tyan/.vim/.vimrc	/^nmap s <Plug>(easymotion-s)$/;"	m	language:Vim
 SS	/home/aby/.vim/.vimrc	/^inoremap SS <Esc>S$/;"	m	language:Vim
 SS	/Users/tyan/.vim/.vimrc	/^inoremap SS <Esc>S$/;"	m	language:Vim
+UNAME	/Users/tyan/.vim/bundle/lusty/Makefile	/^UNAME := $(shell uname)$/;"	m	language:Make
 UU	/home/aby/.vim/.vimrc	/^inoremap UU <Esc>u$/;"	m	language:Vim
 UU	/Users/tyan/.vim/.vimrc	/^inoremap UU <Esc>u$/;"	m	language:Vim

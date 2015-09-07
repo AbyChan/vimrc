@@ -80,6 +80,31 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'w0ng/vim-hybrid'
 
+" Indent guides ---------------------------------------------------------- {{{
+Plugin 'nathanaelkane/vim-indent-guides'
+let g:indent_guides_auto_colors = 0
+autocmd BufNew,BufRead *.py :IndentGuidesEnable
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermfg=none ctermbg=234
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermfg=none ctermbg=235
+" }}}
+"
+" MatchTagAlways --------------------------------------------------------- {{{
+Plugin 'valloric/MatchTagAlways'
+let g:mta_filetypes = {
+  \ 'html': 1,
+  \ 'xml': 1,
+  \ 'jinja': 1,
+  \ 'htmldjango': 1,
+  \}
+
+" }}}
+
+" Vinegar ---------------------------------------------------------------- {{{
+Plugin 'tpope/vim-vinegar'
+let g:netrw_liststyle=3       " Display as tree
+" }}}
+
+
 execute pathogen#infect()
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -118,18 +143,53 @@ set completeopt=menu,menuone,longest
 set cursorline
 set ttyfast
 set ruler
-set backspace=indent,eol,start
+"set backspace=indent,eol,start
 set laststatus=2
-set relativenumber
+"set relativenumber
+set number
 set undofile
 set history=1000         " remember more commands and search history
 set undolevels=1000      " use many muchos levels of undo
+
+if (exists("+breakindent"))
+    set breakindent
+endif
+set showbreak=...
 
 "move
 nnoremap j gj
 nnoremap k gk
 nnoremap ; :
 
+map <up> gk
+map k gk
+imap <up> <C-o>gk
+map <down> gj
+map j gj
+imap <down> <C-o>gj
+map E ge
+set whichwrap=h,l,~,[,],<,>
+
+" Use tab instead of % for moving between brackets
+nnoremap <tab> %
+vnoremap <tab> %
+
+vnoremap // y/<C-R>"<CR>
+
+" Keep search matches in the middle of the window.
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
+" Same when jumping around
+nnoremap g; g;zz
+nnoremap g, g,zz
+nnoremap <c-o> <c-o>zz
+
+" Abbreviations ---------------------------------------------------------- {{{
+ab teh the
+ab hte the
+ab taht that
+ab waht what
 
 
 let NERDTreeDirArrows=0 "fix can't open folder
@@ -284,7 +344,7 @@ let g:snips_trigger_key = '<C-\>'
 let g:ycm_key_list_select_completion = ['<c-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<c-p>', '<Up>']
 
-
+" TODO
 nmap <F2> :TernDef<CR>
 nmap <F3> :TernRename<CR>
 nmap <F4> :TernDefPreview<CR>
@@ -304,4 +364,7 @@ nmap <F10>    <Plug>(macvim-transparency-roll)
 """<Leader>lr  - Opens filesystem explorer at the directory of the current file. 
 """<Leader>lb  - Opens buffer explorer. 
 """<Leader>lg  - Opens buffer grep. 
+
+
+
 
