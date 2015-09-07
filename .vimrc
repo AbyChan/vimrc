@@ -37,6 +37,7 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'moll/vim-node'
 Plugin 'pangloss/vim-javascript'
 Plugin 'marijnh/tern_for_vim'
+Plugin 'kchmck/vim-coffee-script'
 
 " //i'don't like tabular ,because i think it is unnesccary with hightlight
 " Plugin 'godlygeek/tabular'
@@ -67,6 +68,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'DataWraith/auto_mkdir'
 Plugin 'edsono/vim-matchit' "extended % matching for HTML
 Plugin 't9md/vim-macvim-transparency'
+Plugin 'sjbach/lusty'
+Plugin 'kien/ctrlp.vim'
 
 " Snippets
 Plugin 'SirVer/ultisnips'
@@ -79,6 +82,7 @@ Plugin 'w0ng/vim-hybrid'
 execute pathogen#infect()
 call vundle#end()            " required
 filetype plugin indent on    " required
+filetype plugin on
 
 " // configure
 "  -----------------tagbar
@@ -176,6 +180,7 @@ let mapleader=","
 " -----------------js beautify key map
 " map <c-f> :call JsBeautify()<cr>
 autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
+autocmd FileType json noremap <buffer>  <c-f> :call JsBeautify()<cr>
 autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
 autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
 autocmd FileType scss noremap <buffer> <c-f> :call CSSBeautify()<cr>
@@ -293,3 +298,9 @@ nmap <C-Up>   <Plug>(macvim-transparency-inc)
 nmap <C-Down> <Plug>(macvim-transparency-dec)
 " roll from 
 nmap <F10>    <Plug>(macvim-transparency-roll)
+
+"""<Leader>lf  - Opens filesystem explorer. 
+"""<Leader>lr  - Opens filesystem explorer at the directory of the current file. 
+"""<Leader>lb  - Opens buffer explorer. 
+"""<Leader>lg  - Opens buffer grep. 
+
