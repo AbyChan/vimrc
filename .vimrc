@@ -38,6 +38,7 @@ Plugin 'moll/vim-node'
 Plugin 'pangloss/vim-javascript'
 Plugin 'marijnh/tern_for_vim'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'isRuslan/vim-es6'
 
 " //i'don't like tabular ,because i think it is unnesccary with hightlight
 " Plugin 'godlygeek/tabular'
